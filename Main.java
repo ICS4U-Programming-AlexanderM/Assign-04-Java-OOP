@@ -91,7 +91,10 @@ public final class Main {
             }
 
             // Print to output file.
-            output.write(customerInfo);
+            output.write("Greetings system admin, " + fords
+                + " Ford vehicles and " + hondas
+                + " Honda vehicles were available this session."
+                + " Here are our charges for this session:\n" + customerInfo);
 
             // Close writer.
             output.close();
