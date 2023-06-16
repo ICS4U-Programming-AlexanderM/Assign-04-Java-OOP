@@ -58,7 +58,7 @@ public class Vehicle {
     *
     * @return if the vehicle is damaged or not.
     */
-    protected boolean drive() {
+    protected boolean getDamage() {
         boolean isDamaged = false;
 
         // Chance of vehicle being damaged has been augmented for testing.

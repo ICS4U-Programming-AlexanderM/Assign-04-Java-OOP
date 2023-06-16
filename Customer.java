@@ -33,7 +33,7 @@ public class Customer {
     /**
     * Javadoc comment to fix stylechecker.
     */
-    private int _length;
+    private int _len_rental;
     /**
     * Javadoc comment to fix stylechecker.
     */
@@ -58,7 +58,7 @@ public class Customer {
         this._phone = phone;
         this._email = email;
         this._vehicle = vehicle;
-        this._length = length;
+        this._len_rental = length;
     }
 
     /**
@@ -103,7 +103,7 @@ public class Customer {
     * @return requested variable.
     */
     public int getLength() {
-        return this._length;
+        return this._len_rental;
     }
 
     /**

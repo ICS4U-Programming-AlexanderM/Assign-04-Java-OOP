@@ -45,7 +45,7 @@ public class Rental {
         final int cost;
 
         // Check if the vehicle was damaged.
-        if (this._vehicle.drive()) {
+        if (this._vehicle.getDamage()) {
             // Add $2000 for repair fees.
             cost = this._vehicle.getBase() + (this._customer.getLength()
                 * this._vehicle.getMultiplier()) + damageCharge;

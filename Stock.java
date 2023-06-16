@@ -9,11 +9,11 @@ public class Stock {
     /**
     * Javadoc comment to fix stylechecker.
     */
-    private int _totalFord;
+    private int _total_ford;
     /**
     * Javadoc comment to fix stylechecker.
     */
-    private int _totalHonda;
+    private int _total_honda;
 
     /**
     * Constructor to set initial values.
@@ -22,8 +22,8 @@ public class Stock {
     * @param totalHonda from main.
     */
     public Stock(int totalFord, int totalHonda) {
-        this._totalFord = totalFord;
-        this._totalHonda = totalHonda;
+        this._total_ford = totalFord;
+        this._total_honda = totalHonda;
     }
 
     /**
@@ -33,12 +33,12 @@ public class Stock {
     */
     public boolean decreaseFord() {
         boolean isAvailable = true;
-        if (this._totalFord - 1 < 0) {
+        if (this._total_ford - 1 < 0) {
             // Ford is not in stock.
             isAvailable = false;
         } else {
             // Decrease stock by one.
-            this._totalFord -= 1;
+            this._total_ford -= 1;
         }
         return isAvailable;
     }
@@ -50,12 +50,12 @@ public class Stock {
     */
     public boolean decreaseHonda() {
         boolean isAvailable = true;
-        if (this._totalHonda - 1 < 0) {
+        if (this._total_honda - 1 < 0) {
             // Honda is not in stock.
             isAvailable = false;
         } else {
             // Decrease stock by one.
-            this._totalHonda -= 1;
+            this._total_honda -= 1;
         }
         return isAvailable;
     }
